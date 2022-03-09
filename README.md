@@ -1,6 +1,6 @@
-# ESP32 reading the DHT22 humidity and temperature sensor via VS Code and PlatformIO
+# ESP32 via VS Code and PlatformIO
 
-This project jumps start the use of ESP32 and programming environment. The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make it work.
+This project jumps start the use of ESP32 and programming environment. An ESP32 development board is used to read the DHT22 humidity and temperature sensor using a third party sensor library. The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make it work.
 
 ## Install the CP210x USB to UART Bridge VCP Driver
 
