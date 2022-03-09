@@ -15,4 +15,5 @@ This project jumps start the use of ESP32 and programming environment. The hard 
 # Set up the IoT kit
 
 The left picture below shows the IoT kit connected to a MacBook Pro. The right diagram shows how the DHT22 temperature and humidity sensor is connected to the ESP32 while there are other components shown in the diagram.
+
 <img src="imgs/IoTKit.png" height=400> <img src="imgs/diagram.jpg" height=400>
