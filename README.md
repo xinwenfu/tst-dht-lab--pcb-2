@@ -1,4 +1,4 @@
-# DHT22 
+# ESP32 reading the DHT22 humidity and temperature sensor
 
 This project jumps start the use of ESP32 and programming environment. The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make it work.
 
