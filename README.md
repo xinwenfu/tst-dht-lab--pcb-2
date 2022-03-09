@@ -22,9 +22,9 @@ The left picture below shows the IoT kit connected to a MacBook Pro. The right d
 
 Start the Ubuntu VM. Clone the GitHub project. 
 ```
-git clone 
+git clone https://github.com/xinwenfu/tst-dht-lab.git
 ```
 
-Start Visual Studio Code. Open the  VS Code -> Open Recent -> ~/esp/esp-idf-lib/examples/tst-dht-01-fu. Click   on the status bar at the bottom of the VS Code interface to build the project. Click   to upload the firmware onto the ESP32 board. Click   to open the Serial Monitor to see the output from the ESP32 board. Please provide a screenshot of the serial monitor output. (3 points)
-Note: During the uploading process, holding down the boot button until the uploading starts
+Start Visual Studio Code. Open *File* -> *Open Folder*. Click the *Build* icon on the status bar at the bottom of the VS Code interface to build the project. Click the *Upload* to upload the firmware onto the ESP32 board. Click the *Serial Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
+**Note**: During the uploading process, holding down the boot button until the uploading starts
 
