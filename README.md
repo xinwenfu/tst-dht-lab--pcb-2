@@ -12,13 +12,17 @@ This project jumps start the use of ESP32 and programming environment. The hard 
 4.	Import .ova file into VirtualBox. Just click the .ova file and follow the on-screen instructions. After the import, you shall see the Ubuntu IoT VM in the Oracle VM VirtualBox Manager. There is no need of configuring the USB of this VM, which has the following credentials. After login, within “Terminal”, run /ls/dev to see ttyUSB0. When the mcro-usb cable of the IoT kit is unplugged from your host computer, ttyUSB0 disappears. 
 5.	If a student feels the Ubuntu IoT VM is slow, please watch [How to improve Linux performance in a VirtualBox VM](https://www.youtube.com/watch?v=tbF8jNjD_IE).
 
+**Note**: It appears that the CP210x USB to UART Bridge VCP Driver has quite some issues. Here are troubleshooting tips
+- Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
+- Try different USB ports on the computer and see which one works. 
+
 ## Set up the IoT kit
 
 The left picture below shows the IoT kit connected to a MacBook Pro. The right diagram shows how the DHT22 temperature and humidity sensor is connected to the ESP32 while there are other components shown in the diagram.
 
 <img src="imgs/IoTKit.png" height=350> <img src="imgs/diagram.jpg" height=350>
 
-## Build, Upload nad Test
+## Build, Upload and Test
 
 Start the Ubuntu VM. Clone the GitHub project. 
 ```
