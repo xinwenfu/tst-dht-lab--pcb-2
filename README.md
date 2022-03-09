@@ -17,3 +17,14 @@ This project jumps start the use of ESP32 and programming environment. The hard 
 The left picture below shows the IoT kit connected to a MacBook Pro. The right diagram shows how the DHT22 temperature and humidity sensor is connected to the ESP32 while there are other components shown in the diagram.
 
 <img src="imgs/IoTKit.png" height=350> <img src="imgs/diagram.jpg" height=350>
+
+# Build, Upload nad Test
+
+Start the Ubuntu VM. Clone the GitHub project. 
+```
+git clone 
+```
+
+Start Visual Studio Code. Open the  VS Code -> Open Recent -> ~/esp/esp-idf-lib/examples/tst-dht-01-fu. Click   on the status bar at the bottom of the VS Code interface to build the project. Click   to upload the firmware onto the ESP32 board. Click   to open the Serial Monitor to see the output from the ESP32 board. Please provide a screenshot of the serial monitor output. (3 points)
+Note: During the uploading process, holding down the boot button until the uploading starts
+
