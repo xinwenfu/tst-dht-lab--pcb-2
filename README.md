@@ -14,4 +14,4 @@ This project jumps start the use of ESP32 and programming environment. The hard 
 
 # Set up the IoT kit
 
-<img src="imgs/IoTKit.png" height=480> <img src="imgs/diagram.jpg" height=480>
+<img src="imgs/IoTKit.png" height=400> <img src="imgs/diagram.jpg" height=400>
