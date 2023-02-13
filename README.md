@@ -55,7 +55,9 @@ The picture below shows the pin layout of the ESP32 development board we use.
 
 ## Clone the project 
 
-If you do not have the project, start the Ubuntu VM and clone this GitHub project within a folder. By default, this project is already located in /home/iot/esp/esp-idf-lib/examples/tst-dht-lab of the Ubuntu VM.
+**Note**: By default, this project is already located in /home/iot/esp/esp-idf-lib/examples/tst-dht-lab of the Ubuntu VM.
+
+If you do not have the project, start the Ubuntu VM and clone this GitHub project within a folder. 
 ```
 git clone https://github.com/xinwenfu/tst-dht-lab.git
 ```
