@@ -4,8 +4,9 @@ This project jumps start the use of ESP32 and programming environment. An ESP32 
 
 The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make it work.
 
-## If not, install VirtualBox and VirtualBox Extension Pack as Administrator on Windows 10 and Mac OS X.
+## If not, install VirtualBox and VirtualBox Extension Pack as Administrator
 
+- Download the .ova file for the Ubuntu VM
 - To import .ova file into VirtualBox, just click the downloaded .ova file and follow the on-screen instructions.
 - After the import, you shall see the Ubuntu IoT VM in the Oracle VM VirtualBox Manager.  
 - *USB Device Filters* are already configured for the Ubuntu VM so that we can access the IoT kit via USB inside of Ubuntu VM.
