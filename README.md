@@ -33,18 +33,19 @@ The picture below shows the pin layout of the ESP32 development board we use.
 
 ![image](https://user-images.githubusercontent.com/69218457/218525664-75457d38-a82f-4c06-8dd5-dbf9b8725e68.png)
 
+## Clone the project 
 
-## Build, Upload and Test
-
-Start the Ubuntu VM. Clone the GitHub project. 
+If you do not have the project, start the Ubuntu VM and clone this GitHub project. 
 ```
 git clone https://github.com/xinwenfu/tst-dht-lab.git
 ```
+
+## Build, Upload and Test
 
 1. Start Visual Studio Code. Open *File* -> *Open Folder*. 
 2. Click the *PlatformIO: Build* icon on the status bar at the bottom of the VS Code interface to build the project. 
 3. Click the *PlatformIO: Upload* to upload the firmware onto the ESP32 board. 
    - **Note**: During the uploading process, holding down the boot button until the uploading starts
-5. Click the *PlatformIO: Serial Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
+4. Click the *PlatformIO: Serial Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
 
 
