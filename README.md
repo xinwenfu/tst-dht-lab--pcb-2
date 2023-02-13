@@ -31,7 +31,7 @@ The left picture below shows the IoT kit connected to a MacBook Pro. The right d
 
 <img src="imgs/diagram.jpg" height=350>
 
-![image](https://user-images.githubusercontent.com/69218457/218575227-d3d9fd05-ea49-4a30-8d95-19c3e276fe86.png | width=100)
+<img src="https://user-images.githubusercontent.com/69218457/218575227-d3d9fd05-ea49-4a30-8d95-19c3e276fe86.png" height=350>
 
 
 The picture below shows the pin layout of the ESP32 development board we use.
