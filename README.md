@@ -4,22 +4,23 @@ This project jumps start the use of ESP32 and programming environment. An ESP32 
 
 The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make it work.
 
+## If not, install VirtualBox and VirtualBox Extension Pack as Administrator on Windows 10 and Mac OS X.
+
+- To import .ova file into VirtualBox, just click the downloaded .ova file and follow the on-screen instructions.
+- After the import, you shall see the Ubuntu IoT VM in the Oracle VM VirtualBox Manager.  
+- *USB Device Filters* are already configured for the Ubuntu VM so that we can access the IoT kit via USB inside of Ubuntu VM.
+- **Ubuntu VM credentials**: username: iot; password: toi
+- After log into the Ubuntu VM, within *Terminal*, run /ls/dev to see ttyUSB0
+  - When the mcro-usb cable of the IoT kit is unplugged from your host computer, ttyUSB0 disappears. 
+- If a student feels the Ubuntu IoT VM is slow, please watch [How to improve Linux performance in a VirtualBox VM](https://www.youtube.com/watch?v=tbF8jNjD_IE).
+
 ## Install the CP210x USB to UART Bridge VCP Driver
 
-1.	If not, install VirtualBox and VirtualBox Extension Pack as Administrator on Windows 10 and Mac OS X.
-    - To import .ova file into VirtualBox, just click the downloaded .ova file and follow the on-screen instructions.
-    - After the import, you shall see the Ubuntu IoT VM in the Oracle VM VirtualBox Manager.  
-    - *USB Device Filters* are already configured for the Ubuntu VM so that we can access the IoT kit via USB inside of Ubuntu VM.
-    - **Ubuntu VM credentials**: username: iot; password: toi
-    - After log into the Ubuntu VM, within *Terminal*, run /ls/dev to see ttyUSB0
-      - When the mcro-usb cable of the IoT kit is unplugged from your host computer, ttyUSB0 disappears. 
-    - If a student feels the Ubuntu IoT VM is slow, please watch [How to improve Linux performance in a VirtualBox VM](https://www.youtube.com/watch?v=tbF8jNjD_IE).
+1. **Note**: Don’t start VirtualBox yet.
 
-2. **Note**: Don’t start VirtualBox yet.
+2.	Connect the ESP32 board to your computer via a micro USB cable.
 
-3.	Connect the ESP32 board to your computer via a micro USB cable.
-
-4.	Install the USB to UART bridge driver on the host computer, which will run the guest Ubuntu VM. 
+3.	Install the USB to UART bridge driver on the host computer, which will run the guest Ubuntu VM. 
     - **Windows host**: Install [the CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) (CP210x Universal Windows Driver) for Windows. After installation, under *Ports* within the *Windows Device Manger*, you shall see *Silicon Labs CP210x USB to UART Bridge* (*COMx*), where *x* may be different at different computers.
     - **macOS host**: It appears macOS has the appropriate driver installed already. When the IoT kit is plugged in a USB port of a Mac computer, within Terminal, run ls /dev/*. /dev/cu.usbserial-0001 or similar shall be seen. When unplugged, the device disappears. 
       - If there is no /dev/cu.usbserial-0001, please download and install [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) (CP210x VCP Mac OSX Driver). 
