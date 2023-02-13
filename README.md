@@ -21,6 +21,7 @@ The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make i
 **Note**: It appears that the CP210x USB to UART Bridge VCP Driver has quite some issues. Here are troubleshooting tips
 - Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
 - Try different USB ports on the computer and see which one works. 
+- Sometimes, unplug and plug again the micro usb cable will address the issue.
 
 ## Set up the IoT kit
 
