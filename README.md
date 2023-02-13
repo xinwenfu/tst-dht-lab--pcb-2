@@ -62,4 +62,4 @@ git clone https://github.com/xinwenfu/tst-dht-lab.git
    - **Note**: During the uploading process, holding down the boot button until the uploading starts
 4. Click the *PlatformIO: Serial Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
 
-
+<img src="imgs/PlatformIO-BuildUploadMonitor.png" height=500>
