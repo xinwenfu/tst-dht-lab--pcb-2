@@ -59,7 +59,7 @@ git clone https://github.com/xinwenfu/tst-dht-lab.git
 1. Start Visual Studio Code. Open *File* -> *Open Folder*. 
 2. Click the *PlatformIO: Build* icon on the status bar at the bottom of the VS Code interface to build the project. 
 3. Click the *PlatformIO: Upload* to upload the firmware onto the ESP32 board. 
-   - **Note**: During the uploading process, holding down the boot button until the uploading starts
+   - **Note**: During the uploading process, you may need to hold down the boot button until the uploading starts
 4. Click the *PlatformIO: Serial Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
 
 <img src="imgs/PlatformIO-BuildUploadMonitor.png" height=500>
