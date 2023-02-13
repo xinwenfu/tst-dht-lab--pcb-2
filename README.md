@@ -15,7 +15,7 @@ The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make i
       - When the mcro-usb cable of the IoT kit is unplugged from your host computer, ttyUSB0 disappears. 
     - If a student feels the Ubuntu IoT VM is slow, please watch [How to improve Linux performance in a VirtualBox VM](https://www.youtube.com/watch?v=tbF8jNjD_IE).
 
-2. **Note**: Don’t start VirtualBox yet if installed.
+2. **Note**: Don’t start VirtualBox yet.
 
 3.	Connect the ESP32 board to your computer via a micro USB cable.
 
