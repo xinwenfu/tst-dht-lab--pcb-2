@@ -1,4 +1,4 @@
-# ESP32 via VS Code and PlatformIO
+# Get started with ESP32 via VS Code and PlatformIO
 
 This project jumps start the use of ESP32 and programming environment. An ESP32 development board is used to read the DHT22 humidity and temperature sensor using a [third party sensor library---esp-idf-lib](https://github.com/UncleRus/esp-idf-lib), which has been installed at /home/iot/esp/esp-idf-lib in our Ubuntu VM.
 
