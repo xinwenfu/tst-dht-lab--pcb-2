@@ -80,6 +80,6 @@ git clone https://github.com/xinwenfu/tst-dht-lab.git
 
 **Alternatively**, Build, Upload and Monitor can be done by clicking on the PlatformIO icon and use Build, Upload and Monitor within PROJECT TASKS as shown below
 
-<img src="imgs/PlatformIO-BuildUploadMonitor.png" height=500>
+<img src="imgs/PlatformIO-BuildUploadMonitor-2.png" height=500>
 
 
