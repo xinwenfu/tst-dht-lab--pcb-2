@@ -11,7 +11,10 @@ The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make i
 - To import .ova file into VirtualBox, just click the downloaded .ova file and follow the on-screen instructions.
 - After the import, you shall see the Ubuntu IoT VM in the Oracle VM VirtualBox Manager.  
 - *USB Device Filters* are already configured for the Ubuntu VM so that we can access the IoT kit via USB inside of Ubuntu VM.
-- **Ubuntu VM credentials**: username: iot; password: toi
+- **Ubuntu VM credentials**
+  - Username: IoT
+  - Password: toi
+  - sudo password: toi
 - If a student feels the Ubuntu IoT VM is slow, please watch [How to improve Linux performance in a VirtualBox VM](https://www.youtube.com/watch?v=tbF8jNjD_IE).
 
 ## Install the CP210x USB to UART Bridge VCP Driver
