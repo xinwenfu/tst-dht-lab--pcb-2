@@ -19,18 +19,19 @@ The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make i
 
 ## Set up the IoT kit
 
-The left picture below shows the IoT kit connected to a MacBook Pro. The right diagram shows how the DHT22 temperature and humidity sensor is connected to the ESP32 while there are other components shown in the diagram.
+The diagram below shows how the DHT22 temperature and humidity sensor is connected to the ESP32 while there are other components shown in the diagram.
 
-<img src="imgs/IoTKit.png" height=350> <img src="imgs/diagram.jpg" height=350>
+<img src="imgs/diagram.jpg" height=350>
 
 The picture below gives a closer look at the connections of different parts of the IoT kit.
 
 <img src="https://user-images.githubusercontent.com/69218457/218575227-d3d9fd05-ea49-4a30-8d95-19c3e276fe86.png" height=350>
 
-
 The picture below shows the pin layout of the ESP32 development board we use.
 
 ![image](https://user-images.githubusercontent.com/69218457/218525664-75457d38-a82f-4c06-8dd5-dbf9b8725e68.png)
+
+<img src="imgs/IoTKit.png" height=350> 
 
 ## Install the CP210x USB to UART Bridge VCP Driver
 
