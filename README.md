@@ -32,15 +32,6 @@ The picture below shows the pin layout of the ESP32 development board we use.
 
 ![image](https://user-images.githubusercontent.com/69218457/218525664-75457d38-a82f-4c06-8dd5-dbf9b8725e68.png)
 
-## Clone the project 
-
-**Note**: By default, this project is already located in /home/iot/esp/esp-idf-lib/examples/tst-dht-lab of the Ubuntu VM.
-
-If you do not have the project, start the Ubuntu VM and clone this GitHub project within a folder. 
-```
-git clone https://github.com/xinwenfu/tst-dht-lab.git
-```
-
 ## Install the CP210x USB to UART Bridge VCP Driver
 
 1. **Note**: Don’t start the Ubuntu VM yet.
@@ -61,6 +52,14 @@ git clone https://github.com/xinwenfu/tst-dht-lab.git
 - Try different USB ports on the computer and see which one works. 
 - Sometimes, unplug and plug again the micro usb cable will address the issue.
 
+## Clone the project 
+
+**Note**: By default, this project is already located in /home/iot/esp/esp-idf-lib/examples/tst-dht-lab of the Ubuntu VM.
+
+If you do not have the project, start the Ubuntu VM and clone this GitHub project within a folder. 
+```
+git clone https://github.com/xinwenfu/tst-dht-lab.git
+```
 
 ## Build, Upload and Test
 
