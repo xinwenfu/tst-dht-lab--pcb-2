@@ -31,6 +31,8 @@ The picture below shows the pin layout of the ESP32 development board we use.
 
 ![image](https://user-images.githubusercontent.com/69218457/218525664-75457d38-a82f-4c06-8dd5-dbf9b8725e68.png)
 
+The picture below shows how the IoT kit is connected to a MacBook.
+
 <img src="imgs/IoTKit.png" height=350> 
 
 ## Install the CP210x USB to UART Bridge VCP Driver
