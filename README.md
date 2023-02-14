@@ -19,7 +19,7 @@ The hard part is to install the CP210x USB to UART Bridge VCP Drivers and make i
 
 ## Install the CP210x USB to UART Bridge VCP Driver
 
-1. **Note**: Don’t start VirtualBox yet.
+1. **Note**: Don’t start the Ubuntu VM yet.
 
 2.	Connect the ESP32 board to your computer via a micro USB cable.
 
