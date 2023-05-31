@@ -17,23 +17,15 @@ The hardest part is installing the CP210x USB to UART Bridge VCP Drivers and mak
   - sudo password: toi
 - If a student feels the Ubuntu IoT VM is slow, please watch [How to improve Linux performance in a VirtualBox VM](https://www.youtube.com/watch?v=tbF8jNjD_IE).
 
-## Set up the IoT kit
+## The IoT kit
 
-The diagram below shows how the DHT22 temperature and humidity sensor is connected to the ESP32 while there are other components shown in the diagram.
+The diagram below shows how the components of the ESP-32 SaTC-PCB module are connected to the ESP-32. **No actions are necessary**.   
 
 <img src="imgs/diagram.jpg" height=350>
 
-The picture below gives a closer look at the connections of different parts of the IoT kit.
+The picture below shows how the IoT kit is connected to a Laptop.
 
-<img src="https://user-images.githubusercontent.com/69218457/218575227-d3d9fd05-ea49-4a30-8d95-19c3e276fe86.png" height=350>
-
-The picture below shows the pin layout of the ESP32 development board we use.
-
-![image](https://user-images.githubusercontent.com/69218457/218525664-75457d38-a82f-4c06-8dd5-dbf9b8725e68.png)
-
-The picture below shows how the IoT kit is connected to a MacBook.
-
-<img src="imgs/IoTKit.png" height=350> 
+<img src="imgs/IoTKit.jpg" height=350> 
 
 ## Install the CP210x USB to UART Bridge VCP Driver
 
@@ -70,7 +62,7 @@ git clone https://github.com/xinwenfu/tst-dht-lab.git
 
 ## Build, Upload and Test
 
-1. Start Visual Studio Code. Open the project *File* -> *Open Folder*. 
+1. Start Visual Studio Code. Open the project by navigating to the tab *File* -> *Open Folder*. 
 2. Click the *ESP-IDF: Build* icon on the status bar at the bottom of the VS Code interface to build the project. 
    - Refer to the picture below
    - If the icon does not work, use the alternative approach provided at the end of this post
@@ -82,12 +74,12 @@ git clone https://github.com/xinwenfu/tst-dht-lab.git
    - Refer to the picture below
    - If the icon does not work, use the alternative approach provided at the end of this post
 
-<img src="imgs/PlatformIO-BuildUploadMonitor.png" height=500>
+<img src="imgs/ESP-IDF-VS-BFM.png" height=500>
 
 **Alternatively**, Build, Upload and Monitor can be done in a terminal sessions as shown below.
 1. Open a *Terminal*
 2. Run the shell script **~/esp/esp-idf/export.sh**
-  - This script is run as a source, not directly executed.
+    - This script is run as a source, not directly executed.
 ```sh
 # Take note of the period in front of the script, this means we are running it as a source.
 $ . ~/esp/esp-idf/export.sh
@@ -107,6 +99,7 @@ $ idf.py flash
 $ idf.py monitor
 ```
 > Note that the commands can be combined and run sequentially as shown in the provided image
-<img src="imgs/PlatformIO-BuildUploadMonitor-2.png" height=500>
+
+<img src="imgs/ESP-IDF-PY-BFM.png" height=500>
 
 
