@@ -39,7 +39,7 @@ The picture below shows how the IoT kit is connected to a Laptop.
       - If there is no /dev/cu.usbserial-0001, please download and install [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) (CP210x VCP Mac OSX Driver). 
       - Unzip the downloaded zip file. In the created macOS_VCP_Driver folder, run SiLabsUSBDriverDisk.dmg and then Install CP210x VCP Driver.app. After successful installation, within Terminal, run ls /dev/*. /dev/cu.SLAB_USBtoUART shall show up.
     - **Linux Host**: It appears Linux distributions like Ubuntu has the appropriate driver installed already. However, the following steps are needed for our Ubuntu VM to use the IoT kit:
-      - Become a user with the sudo priviledge. e.g., *su cyberadmin*
+      - Become a user with the sudo privileges. e.g., *su cyberadmin*
       - *sudo adduser student1 vboxusers* # student1 is the user that runs our Ubuntu IoT VM
       - Reboot the Linux host
 
