@@ -1,41 +1,63 @@
 #include <stdio.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
-#include <dht.h>
+#include <esp_system.h>
+#include "aht.h"///home/iot/esp/esp-idf-lib/components/aht/
+#include <string.h>
+#include <esp_err.h>
+#include <esp_log.h>
 
-static const dht_sensor_type_t sensor_type = DHT_TYPE_AM2301;
+#define AHT_TYPE AHT_TYPE_AHT1x
+//#define AHT_TYPE AHT_TYPE_AHT20
+
 #if defined(CONFIG_IDF_TARGET_ESP8266)
-static const gpio_num_t dht_gpio = 4;
+#define SDA_GPIO 4
+#define SCL_GPIO 5
 #else
-static const gpio_num_t dht_gpio = 22;
+// Define the pins that will be used by the AHT device
+#define SDA_GPIO 27
+#define SCL_GPIO 33
 #endif
 
+#ifndef APP_CPU_NUM
+// Trusting old forums (https://www.esp32.com/viewtopic.php?t=8558); This just refers to the CPU we will execute the process on. (0 or 1).
+#define APP_CPU_NUM PRO_CPU_NUM
+#endif
 
-void dht_test(void *pvParameters)
+static const char *TAG = "aht-example";
+
+void task(void *pvParameters)
 {
-    int16_t temperature = 0;
-    int16_t humidity = 0;
+    aht_t dev = { 0 };
+    dev.mode = AHT_MODE_NORMAL;
+    dev.type = AHT_TYPE;
 
-    // DHT sensors that come mounted on a PCB generally have
-    // pull-up resistors on the data pin.  It is recommended
-    // to provide an external pull-up resistor otherwise...
+    ESP_ERROR_CHECK(aht_init_desc(&dev, AHT_I2C_ADDRESS_GND, 0, SDA_GPIO, SCL_GPIO));
+    ESP_ERROR_CHECK(aht_init(&dev));
 
-    //gpio_set_pull_mode(dht_gpio, GPIO_PULLUP_ONLY);
+    bool calibrated;
+    ESP_ERROR_CHECK(aht_get_status(&dev, NULL, &calibrated));
+    if (calibrated)
+        ESP_LOGI(TAG, "Sensor calibrated");
+    else
+        ESP_LOGW(TAG, "Sensor not calibrated!");
+
+    float temperature, humidity;
 
     while (1)
     {
-        if (dht_read_data(sensor_type, dht_gpio, &humidity, &temperature) == ESP_OK)
-            printf("Humidity: %d%% Temp: %dC\n", humidity / 10, temperature / 10);
+        esp_err_t res = aht_get_data(&dev, &temperature, &humidity);
+        if (res == ESP_OK)
+            ESP_LOGI(TAG, "Temperature: %.1f°C, Humidity: %.2f%%", temperature, humidity);
         else
-            printf("Could not read data from sensor\n");
+            ESP_LOGE(TAG, "Error reading data: %d (%s)", res, esp_err_to_name(res));
 
-        // If you read the sensor data too often, it will heat up
-        // http://www.kandrsmith.org/RJS/Misc/Hygrometers/dht_sht_how_fast.html
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        vTaskDelay(pdMS_TO_TICKS(500));
     }
 }
 
 void app_main()
 {
-    xTaskCreate(dht_test, "dht_test", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
+    ESP_ERROR_CHECK(i2cdev_init());
+    xTaskCreatePinnedToCore(task, TAG, configMINIMAL_STACK_SIZE * 8, NULL, 5, NULL, APP_CPU_NUM);
 }
