@@ -2,7 +2,7 @@
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
 #include <esp_system.h>
-#include "aht.h"///home/iot/esp/esp-idf-lib/components/aht/
+#include "aht.h"
 #include <string.h>
 #include <esp_err.h>
 #include <esp_log.h>
