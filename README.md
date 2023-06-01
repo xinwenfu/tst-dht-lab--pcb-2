@@ -23,7 +23,7 @@ The diagram below shows how the components of the ESP-32 SaTC-PCB module are con
 
 <img src="imgs/diagram.jpg" height=350>
 
-The picture below shows how the IoT kit is connected to a Laptop.
+You can see how the IoT kit is connected to a Laptop in the picture below. 
 
 <img src="imgs/IoTKit.jpg" height=350> 
 
@@ -39,17 +39,18 @@ The picture below shows how the IoT kit is connected to a Laptop.
       - If there is no /dev/cu.usbserial-0001, please download and install [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) (CP210x VCP Mac OSX Driver). 
       - Unzip the downloaded zip file. In the created macOS_VCP_Driver folder, run SiLabsUSBDriverDisk.dmg and then Install CP210x VCP Driver.app. After successful installation, within Terminal, run ls /dev/*. /dev/cu.SLAB_USBtoUART shall show up.
     - **Linux Host**: It appears Linux distributions like Ubuntu has the appropriate driver installed already. However, the following steps are needed for our Ubuntu VM to use the IoT kit:
-      - Become a user with the sudo privileges. e.g., *su cyberadmin*
-      - *sudo adduser student1 vboxusers* # student1 is the user that runs our Ubuntu IoT VM
-      - Reboot the Linux host
+      - Become a user with the sudo privileges. e.g., *su cyberadmin*.
+      - *sudo adduser student1 vboxusers* # student1 is the user that runs our Ubuntu IoT VM.
+      - Reboot the Linux host.
 
-4. Log into the Ubuntu VM, within the *Terminal*, run /ls/dev to see ttyUSB0 (Note it may appear as ttyACM0)
+4. Log into the Ubuntu VM, within the *Terminal*, run /ls/dev to see ttyUSB0 (Note it may appear as ttyACM0).
   - When the mcro-usb cable of the IoT kit is unplugged from your host computer, ttyUSB0 disappears. 
 
-**Note**: It appears that the CP210x USB to UART Bridge VCP Driver has some issues. Here are troubleshooting tips
-- Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
-- Try different USB ports on the computer and see which one works. 
-- Sometimes, unplugging the micro usb cable and plugging it back in will address the issue.
+  
+**Note**: It appears that the CP210x USB to UART Bridge VCP Driver has some issues. The following are some troubleshooting tips.
+  - Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
+  - Try different USB ports on the computer and see which one works. 
+  - Sometimes, unplugging the micro usb cable and plugging it back in will address the issue.
 
 ## Clone the project 
 
@@ -64,40 +65,40 @@ git clone https://github.com/xinwenfu/tst-dht-lab.git
 
 1. Start Visual Studio Code. Open the project by navigating to the tab *File* -> *Open Folder*. 
 2. Click the *ESP-IDF: Build* icon on the status bar at the bottom of the VS Code interface to build the project. 
-   - Refer to the picture below
-   - If the icon does not work, use the alternative approach provided at the end of this post
+   - Refer to the picture below.
+   - If the icon does not work, use the alternative approach provided at the end of this post.
 4. Click the *ESP-IDF: Flash* to upload the firmware onto the ESP32 board. 
-   - **Note**: During the uploading process, you may need to hold down the boot button until the uploading starts
-   - Refer to the picture below
-   - If the icon does not work, use the alternative approach provided at the end of this post
+   - **Note**: During the uploading process, you may need to hold down the boot button until the uploading starts.
+   - Refer to the picture below.
+   - If the icon does not work, use the alternative approach provided at the end of this post.
 5. Click the *ESP-IDF: Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
-   - Refer to the picture below
-   - If the icon does not work, use the alternative approach provided at the end of this post
+   - Refer to the picture below.
+   - If the icon does not work, use the alternative approach provided at the end of this post.
 
 <img src="imgs/ESP-IDF-VS-BFM.png" height=500>
 
 **Alternatively**, Build, Upload and Monitor can be done in a terminal sessions as shown below.
-1. Open a *Terminal*
-2. Run the shell script **~/esp/esp-idf/export.sh**
+1. Open a *Terminal*.
+2. Run the shell script **~/esp/esp-idf/export.sh**.
     - This script is run as a source, not directly executed.
 ```sh
 # Take note of the period in front of the script, this means we are running it as a source.
 $ . ~/esp/esp-idf/export.sh
 ```
-1. Navigate to your project file
-2. Run the following commands
-3. Build
-```sh
-$ idf.py build
-```
-1. Flash
-```sh
-$ idf.py flash
-```
-1. Monitor 
-```sh
-$ idf.py monitor
-```
+1. Navigate to your project file.
+2. Run the following commands.
+   * Build.
+    ```sh
+    $ idf.py build
+    ```
+   * Flash
+    ```sh
+    $ idf.py flash
+    ```
+   * Monitor 
+    ```sh
+    $ idf.py monitor
+    ```
 > Note that the commands can be combined and run sequentially as shown in the provided image
 
 <img src="imgs/ESP-IDF-PY-BFM.png" height=500>
