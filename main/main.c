@@ -32,7 +32,7 @@ void task(void *pvParameters)
     dev.mode = AHT_MODE_NORMAL;
     dev.type = AHT_TYPE;
 
-    ESP_ERROR_CHECK(aht_init_desc(&dev, AHT_I2C_ADDRESS_GND, 0, SDA_GPIO, SCL_GPIO));
+    ESP_ERROR_CHECK(aht_init_desc(&dev, AHT_I2C_ADDRESS_GND, (i2c_port_t)0, SDA_GPIO, SCL_GPIO));
     ESP_ERROR_CHECK(aht_init(&dev));
 
     bool calibrated;
