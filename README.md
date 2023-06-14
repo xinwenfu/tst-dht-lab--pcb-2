@@ -1,6 +1,6 @@
 # Get started with ESP32 via VS Code and the ESP-IDF extension 
 
-This project jumps start the use of the ESP32 and programming environment. An ESP32 development board is used to read the DHT22 humidity and temperature sensor using a [third party sensor library---esp-idf-lib](https://github.com/UncleRus/esp-idf-lib), which has been installed at /home/iot/esp/esp-idf-lib in our Ubuntu VM.
+This project jumps start the use of the ESP32 and programming environment. An ESP32 microcontroller is used to read an AHT10 humidity and temperature sensor using a [third party sensor library---esp-idf-lib](https://github.com/UncleRus/esp-idf-lib), which has been installed at /home/iot/esp/esp-idf-lib in our Ubuntu VM.
 
 The hardest part is installing the CP210x USB to UART Bridge VCP Drivers and making it work.
 
@@ -9,7 +9,7 @@ The hardest part is installing the CP210x USB to UART Bridge VCP Drivers and mak
 - If not, install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) as Administrator on [Windows 10](https://www.youtube.com/watch?v=8mns5yqMfZk) and [Mac OS X](https://www.youtube.com/watch?v=lEvM-No4eQo).
 - Download the [UbuntuIoT-35GB.ova](https://www.cs.uml.edu/~xinwenfu/VMs/UbuntuIoT-35GB.ova) for the Ubuntu VM
 - To import .ova file into VirtualBox, just click the downloaded .ova file and follow the on-screen instructions.
-- After the import, you shall see the Ubuntu IoT VM in the Oracle VM VirtualBox Manager.  
+- After the import, you will see the Ubuntu IoT VM in the Oracle VM VirtualBox Manager.  
 - *USB Device Filters* are already configured for the Ubuntu VM so that we can access the IoT kit via USB inside of Ubuntu VM.
 - **Ubuntu VM credentials**
   - Username: IoT
@@ -54,7 +54,7 @@ You can see how the IoT kit is connected to a Laptop in the picture below.
 
 ## Clone the project 
 
-**Note**: By default, this project is already located at /home/iot/esp/esp-idf-lib/examples/tst-dht-lab of the Ubuntu VM.
+**Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/ ``` directory of the Ubuntu VM.
 
 If you do not have the project, start the Ubuntu VM and clone this GitHub project within a folder. 
 ```
