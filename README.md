@@ -4,7 +4,7 @@ This project jumps start the use of the ESP32 and programming environment. An ES
 
 The hardest part is installing the CP210x USB to UART Bridge VCP Drivers and making it work.
 
-## Install VirtualBox and Import Ubuntu VM Appliance (.ova)
+## Install VirtualBox and Import Ubuntu VM Appliance (Optional)
 
 - If not, install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) as Administrator on [Windows 10](https://www.youtube.com/watch?v=8mns5yqMfZk) and [Mac OS X](https://www.youtube.com/watch?v=lEvM-No4eQo).
 - Download the [UbuntuIoT-35GB.ova](https://www.cs.uml.edu/~xinwenfu/VMs/UbuntuIoT-35GB.ova) for the Ubuntu VM
