@@ -24,10 +24,18 @@
 #define APP_CPU_NUM PRO_CPU_NUM
 #endif
 
+// CString printed with every ESP_LOG 
 static const char *TAG = "aht-example";
 
+//********************************************************
+// Function: Read temp, and humidity from the AHT device. 
+// Print the results to the serial output.
+// Arguments: void* of parameters
+// Return Value: none
+//********************************************************
 void task(void *pvParameters)
 {
+    // Initialize AHT Device
     aht_t dev = { 0 };
     dev.mode = AHT_MODE_NORMAL;
     dev.type = AHT_TYPE;
@@ -35,6 +43,7 @@ void task(void *pvParameters)
     ESP_ERROR_CHECK(aht_init_desc(&dev, AHT_I2C_ADDRESS_GND, (i2c_port_t)0, SDA_GPIO, SCL_GPIO));
     ESP_ERROR_CHECK(aht_init(&dev));
 
+    // Calibrate device, log to serial results
     bool calibrated;
     ESP_ERROR_CHECK(aht_get_status(&dev, NULL, &calibrated));
     if (calibrated)
@@ -44,20 +53,23 @@ void task(void *pvParameters)
 
     float temperature, humidity;
 
+    // Forever, read and print the results from the AHT
     while (1)
     {
         esp_err_t res = aht_get_data(&dev, &temperature, &humidity);
         if (res == ESP_OK)
-            ESP_LOGI(TAG, "Temperature: %.1f°C, Humidity: %.2f%%", temperature, humidity);
+            ESP_LOGI(TAG, "\nTemperature: %.1f°C, Humidity: %.2f%%\nTemperature: %.1f°F, Humidity: %.2f%%", temperature, humidity, (temperature * (9.0/5.0) + 32.0), humidity);
         else
             ESP_LOGE(TAG, "Error reading data: %d (%s)", res, esp_err_to_name(res));
 
-        vTaskDelay(pdMS_TO_TICKS(500));
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 
 void app_main()
 {
+    // Initialize I2C device 
     ESP_ERROR_CHECK(i2cdev_init());
+    // Create a task and pin it to the APPLICATION CPU (Just one of the two cores)
     xTaskCreatePinnedToCore(task, TAG, configMINIMAL_STACK_SIZE * 8, NULL, 5, NULL, APP_CPU_NUM);
 }
