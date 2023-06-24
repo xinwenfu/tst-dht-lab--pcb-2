@@ -5,7 +5,7 @@ This project jumps start the use of the ESP32 and programming environment. An ES
 ## Install VirtualBox and Import Ubuntu VM Appliance (Optional)
 
 - If not, install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) as Administrator on [Windows 10](https://www.youtube.com/watch?v=8mns5yqMfZk) and [Mac OS X](https://www.youtube.com/watch?v=lEvM-No4eQo).
-- Download the [UbuntuIoT-35GB.ova](https://www.cs.uml.edu/~xinwenfu/VMs/UbuntuIoT-35GB.ova) for the Ubuntu VM
+- Download the [UbuntuIoT-50GB.ova](https://www.cs.uml.edu/~xinwenfu/VMs/UbuntuIoT-50GB.ova) for the Ubuntu VM
 - To import .ova file into VirtualBox, just click the downloaded .ova file and follow the on-screen instructions.
 - After the import, you will see the Ubuntu IoT VM in the Oracle VM VirtualBox Manager.  
 - *USB Device Filters* are already configured for the Ubuntu VM so that we can access the IoT kit via USB inside of Ubuntu VM.
