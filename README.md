@@ -2,8 +2,6 @@
 
 This project jumps start the use of the ESP32 and programming environment. An ESP32 microcontroller is used to read an AHT10 humidity and temperature sensor using a [third party sensor library---esp-idf-lib](https://github.com/UncleRus/esp-idf-lib), which has been installed at /home/iot/esp/esp-idf-lib in our Ubuntu VM.
 
-The hardest part is to make USB to UART Bridge driver work.
-
 ## Install VirtualBox and Import Ubuntu VM Appliance (Optional)
 
 - If not, install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) as Administrator on [Windows 10](https://www.youtube.com/watch?v=8mns5yqMfZk) and [Mac OS X](https://www.youtube.com/watch?v=lEvM-No4eQo).
@@ -27,7 +25,8 @@ You can see how the IoT kit is connected to a Laptop in the picture below.
 
 <img src="imgs/IoTKit.jpg" height=350> 
 
-## Install the CP210x USB to UART Bridge VCP Driver
+## Install USB to UART Bridge Driver 
+The hardest part is to make USB to UART Bridge driver of the IoT kit work so that we can communciate with the ESP32 chip on the IoT kit.
 
 1. **Note**: Don’t start the Ubuntu VM yet.
 
