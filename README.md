@@ -44,9 +44,8 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
 
 4. Log into the Ubuntu VM, within the *Terminal*, run /ls/dev to see ttyACM0 (Note it may appear as ttyUSB0).
   - When the mcro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
-
   
-**Note**: It appears that the CP210x USB to UART Bridge VCP Driver has some issues. The following are some troubleshooting tips.
+**Note**: If there are issues, the following are some troubleshooting tips.
   - Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
   - Try different USB ports on the computer and see which one works. 
   - Sometimes, unplugging the micro usb cable and plugging it back in will address the issue.
