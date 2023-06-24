@@ -77,6 +77,7 @@ git clone https://github.com/xinwenfu/tst-dht-lab.git
 
 <img src="imgs/ESP-IDF-VS-BFM.png" height=500>
 
+### Alternative Build, Upload and Monitor in a Console (Optional)
 **Alternatively**, Build, Upload and Monitor can be done in a terminal sessions as shown below.
 1. Open a *Terminal*.
 2. Run the shell script **~/esp/esp-idf/export.sh**.
