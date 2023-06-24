@@ -46,6 +46,9 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
   - When the mcro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
 
 **Note**: The VM is already configured to use the IoT kit through its USB device filters (This VM -> Settings -> USB)
+
+<img src="imgs/VM-USB-Device-Filters.png" height=350> 
+
   
 **Note**: If there are issues, the following are some troubleshooting tips.
   - Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
