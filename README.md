@@ -52,7 +52,7 @@ You can see how the IoT kit is connected to a Laptop in the picture below.
   - Try different USB ports on the computer and see which one works. 
   - Sometimes, unplugging the micro usb cable and plugging it back in will address the issue.
 
-## Clone the project 
+## Clone the project (Optional)
 
 **Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/ ``` directory of the Ubuntu VM.
 
