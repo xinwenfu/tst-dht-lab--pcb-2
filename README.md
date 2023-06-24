@@ -42,8 +42,10 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
       - *sudo adduser student1 vboxusers* # student1 is the user that runs our Ubuntu IoT VM.
       - Reboot the Linux host.
 
-4. Log into the Ubuntu VM, within the *Terminal*, run /ls/dev to see ttyACM0 (Note it may appear as ttyUSB0).
+4. Start and log into the Ubuntu VM, within the *Terminal*, run /ls/dev to see ttyACM0 (Note it may appear as ttyUSB0).
   - When the mcro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
+
+**Note**: The VM is already configured to use the IoT kit through its USB device filters (This VM -> Settings -> USB)
   
 **Note**: If there are issues, the following are some troubleshooting tips.
   - Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
