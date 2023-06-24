@@ -25,7 +25,7 @@ The diagram below shows how the components of the ESP-32 SaTC-PCB module are con
 
 You can see how the IoT kit is connected to a Laptop in the picture below. 
 
-<img src="imgs/IoTKit.jpg" height=350> 
+<img src="imgs/IoTKit.JPG" height=350> 
 
 ## Install the CP210x USB to UART Bridge VCP Driver
 
