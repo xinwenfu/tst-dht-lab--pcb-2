@@ -48,6 +48,7 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
       - Become a user with the sudo privileges. e.g., *su cyberadmin*.
       - *sudo adduser student1 vboxusers* # student1 is the user that runs our Ubuntu IoT VM.
       - Reboot the Linux host.
+    - If black green shows up for the Ubuntu VM, try to increase Ubuntu VM -> Display -> Virtual Memory
 
 **Note**: For version 2 of the PCB, under **macos**, 
 - Within /dev, the device is listed as something like /dev/tty.usbserial-550D0193571
