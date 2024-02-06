@@ -52,7 +52,7 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
 
 **Note**: For version 2 of the PCB, under **macos**, 
 - Within /dev, the device is listed as something like /dev/tty.usbserial-550D0193571
-- The Ubuntu VM has to be started as root!
+- The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopic.php?f=8&t=107333#p527198)!
   1. Start VB using `sudo virtualbox` under commandline
   2. Within VirtualBox, push the + button to add the Ubuntu VM, which is located within your home folder as a .vdi file
   3. Then just start your guest OS and USB devices should work
