@@ -47,10 +47,7 @@ Windows and Linux users do not need to do anything by default (hope so). However
 
     - **macOS host**:
       - Within /dev, the device is listed as something like /dev/tty.usbserial-550D0193571
-      - The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopic.php?f=8&t=107333#p527198)!
-        1. Start VirtualBox using `sudo virtualbox` within a terminal 
-        2. Within VirtualBox, push the + button to add the Ubuntu VM, which is located within your home folder as a .vdi file
-        3. Then just start your guest OS and USB devices should work
+
      
     - **Linux Host**: It appears Linux distributions like Ubuntu has the appropriate driver installed already. However, the following steps are needed for our Ubuntu VM to use the IoT kit:
       
@@ -62,8 +59,15 @@ Windows and Linux users do not need to do anything by default (hope so). However
 
 
 ## 4. Start and log into the Ubuntu VM
+
 - Within the *Terminal*, run /ls/dev to see ttyACM0.
 - When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
+
+**macOS host**:
+- The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopic.php?f=8&t=107333#p527198)!
+  1. Start VirtualBox using `sudo virtualbox` within a terminal 
+  2. Within VirtualBox, push the + button to add the Ubuntu VM, which is located within your home folder as a .vdi file
+  3. Then just start your guest OS and USB devices should work
 
 **Note**: The VM is already configured to use the IoT kit through its *USB Device Filters* (This VM -> Settings -> USB) within VirtualBox.
 <!-- as shown below. Once the VM starts, the COMX port on Windows disappears. When the VM is shut down, the COMX port on Windows shows up again. -->
