@@ -60,6 +60,7 @@ Windows and Linux users do not need to do anything by default (hope so). However
 
 ## 4. Start and log into the Ubuntu VM
 **Windows and Linux hosts**
+- Start the Ubuntu VM within VirtualBox and log into it
 - Within the *Terminal*, run /ls/dev to see ttyACM0.
 - When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
 
