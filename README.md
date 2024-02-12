@@ -59,7 +59,7 @@ By default, you do not need to do anything within the host OS. However, macOS us
 
     - **Notes**: If black green shows up for the Ubuntu VM, within VirtualBox, try to increase Ubuntu VM -> Display -> Virtual Memory
 
-## Start and log into the Ubuntu VM
+## 4. Start and log into the Ubuntu VM
 - Within the *Terminal*, run /ls/dev to see ttyACM0.
 - When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
 
@@ -78,7 +78,7 @@ By default, you do not need to do anything within the host OS. However, macOS us
 
 **Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/aht-lab ``` directory of the Ubuntu VM.
 
-## 4. Build, Upload and Test
+## 5. Build, Upload and Test
 
 1. Start Visual Studio Code. Open the project by navigating to the tab *File* -> *Open Folder*. Navigate to ``` ~/esp/IoT-Examples/aht-lab ``` and click the **Open** button.
 
