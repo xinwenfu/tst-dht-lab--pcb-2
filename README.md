@@ -98,7 +98,7 @@ Windows and Linux users do not need to do anything by default (hope so). However
    - Refer to the picture below.
    - If the icon does not work, use the alternative approach provided at the end of this post.
 
-<img src="imgs/ESP-IDF-VS-BFM.png" height=500>
+<img src="imgs/ESP-IDF-VS-BFM.png" width=300>
 
 ### Alternative Build, Upload and Monitor in a Terminal/Console (Optional)
 **Alternatively**, Build, Upload and Monitor can be done in a terminal sessions as shown below.
