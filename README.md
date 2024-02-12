@@ -86,15 +86,16 @@ Windows and Linux users do not need to do anything by default (hope so). However
 
 <img src="https://github.com/xinwenfu/tst-dht-lab--pcb-2/assets/69218457/58e04c63-cac1-4dea-a82b-f18ace67d307" height=350> 
 
+2. Click the *ESP-IDF Select port to use* icon on the status bar at the bottom of the VS Code interface to select the communication port ttyACM0, which is used to transfer the firmware to the IoT kit. 
 
-2. Click the *ESP-IDF: Build* icon on the status bar at the bottom of the VS Code interface to build the project. 
+3. Click the *ESP-IDF: Build* icon on the status bar at the bottom of the VS Code interface to build the project. 
    - Refer to the picture below.
    - If the icon does not work, use the alternative approach provided at the end of this post.
-3. Click the *ESP-IDF: Flash* to upload the firmware onto the ESP32 board. 
+4. Click the *ESP-IDF: Flash* to upload the firmware onto the ESP32 board. 
    - **Note**: During the uploading process, you may need to hold down the boot button until the uploading starts.
    - Refer to the picture below.
    - If the icon does not work, use the alternative approach provided at the end of this post.
-4. Click the *ESP-IDF: Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
+5. Click the *ESP-IDF: Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
    - Refer to the picture below.
    - If the icon does not work, use the alternative approach provided at the end of this post.
 
