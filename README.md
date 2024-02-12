@@ -4,7 +4,7 @@ This project jumps start the use of the ESP32 and programming environment. An ES
 
 **Notes**: 
 * The [esp-idf-lib](https://github.com/UncleRus/esp-idf-lib) components are included utilizing the *EXTRA_COMPONENT_DIRS* variable in the [CMakeLists.txt](./CMakeLists.txt) file. This occurs in multiple labs and more information can be found on ESP-IDF's [build system description](https://docs.espressif.com/projects/esp-idf/en/v5.1/esp32/api-guides/build-system.html).
-* The hardest part is installing the CP210x USB to UART Bridge VCP Drivers on the host machine and making it work.
+* The hardest part is installing the <!--- CP210x USB --->  to UART Bridge VCP Drivers on the host machine and making it work.
 * The (Optional) tag in the sections for *all* repositories specifies steps of that section are *already done* for the student if using the provided Virtual Machine.
 
 
