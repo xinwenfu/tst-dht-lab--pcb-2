@@ -53,12 +53,13 @@ Windows and Linux users do not need to do anything by default (hope so). However
         3. Then just start your guest OS and USB devices should work
      
     - **Linux Host**: It appears Linux distributions like Ubuntu has the appropriate driver installed already. However, the following steps are needed for our Ubuntu VM to use the IoT kit:
+      
+    - **Notes**: If black green shows up for the Ubuntu VM, within VirtualBox, try to increase Ubuntu VM -> Display -> Virtual Memory
   
 [comment]: <> (- Become a user with the sudo privileges. e.g., *su cyberadmin*.)
 [comment]: <> (- *sudo adduser student vboxusers* # student is the user that runs our Ubuntu IoT VM.)
 [comment]: <> (-     - Reboot the Linux host.)
 
-    - **Notes**: If black green shows up for the Ubuntu VM, within VirtualBox, try to increase Ubuntu VM -> Display -> Virtual Memory
 
 ## 4. Start and log into the Ubuntu VM
 - Within the *Terminal*, run /ls/dev to see ttyACM0.
