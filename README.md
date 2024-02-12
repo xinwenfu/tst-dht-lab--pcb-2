@@ -43,18 +43,12 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
     - **Windows host**: It appears Windows installs the appropriate driver once the IoT kit is plugged. Within Windows' *Device Manager*, a serial port shall show up under *Ports (COM & LPT)* while it is not necessarily COM4. <br>
     <img src="imgs/Windows-IoT-Kit-COM-Port.png" height=350>  <br>
     - **macOS host**:
- <!---
- It appears macOS has the appropriate driver installed already. When the IoT kit is plugged in a USB port of a Mac computer, within Terminal, run ls /dev/*. /dev/cu.usbserial-0001 or similar shall be seen. When unplugged, the device disappears.
- If there is no /dev/cu.usbserial-0001, please download and install [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) (CP210x VCP Mac OSX Driver). 
-      - Unzip the downloaded zip file. In the created macOS_VCP_Driver folder, run SiLabsUSBDriverDisk.dmg and then Install CP210x VCP Driver.app. After successful installation, within Terminal, run ls /dev/*. /dev/cu.SLAB_USBtoUART shall show up.
---->
-
-    - Within /dev, the device is listed as something like /dev/tty.usbserial-550D0193571
-    - The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopic.php?f=8&t=107333#p527198)!
-      1. Start VB using `sudo virtualbox` under commandline
-      2. Within VirtualBox, push the + button to add the Ubuntu VM, which is located within your home folder as a .vdi file
-      3. Then just start your guest OS and USB devices should work
-      4. Within Ubuntu VM, the usb device is called ttyACM0 within /dev\
+      - Within /dev, the device is listed as something like /dev/tty.usbserial-550D0193571
+      - The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopic.php?f=8&t=107333#p527198)!
+        1. Start VB using `sudo virtualbox` under commandline
+        2. Within VirtualBox, push the + button to add the Ubuntu VM, which is located within your home folder as a .vdi file
+        3. Then just start your guest OS and USB devices should work
+        4. Within Ubuntu VM, the usb device is called ttyACM0 within /dev\
      
     - **Linux Host**: It appears Linux distributions like Ubuntu has the appropriate driver installed already. However, the following steps are needed for our Ubuntu VM to use the IoT kit:
       - Become a user with the sudo privileges. e.g., *su cyberadmin*.
