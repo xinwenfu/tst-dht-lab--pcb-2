@@ -1,13 +1,13 @@
 # Get started with ESP32 via VS Code and the ESP-IDF extension 
 
-This project jumps start the use of the ESP32 and programming environment. An ESP32 microcontroller is used to read an AHT10 humidity and temperature sensor using an additional sensor library [esp-idf-lib](https://github.com/UncleRus/esp-idf-lib), which has been installed at /home/iot/esp/esp-idf-lib on our Ubuntu VM.
+Please read the whole tutorial before working on the project. This project jumps start the use of the ESP32 and programming environment. An ESP32 microcontroller is used to read an AHT10 humidity and temperature sensor using an additional sensor library [esp-idf-lib](https://github.com/UncleRus/esp-idf-lib), which has been installed at /home/iot/esp/esp-idf-lib on our Ubuntu VM.
 
 **Notes**: 
 * The [esp-idf-lib](https://github.com/UncleRus/esp-idf-lib) components are included utilizing the *EXTRA_COMPONENT_DIRS* variable in the [CMakeLists.txt](./CMakeLists.txt) file. This occurs in multiple labs and more information can be found on ESP-IDF's [build system description](https://docs.espressif.com/projects/esp-idf/en/v5.1/esp32/api-guides/build-system.html).
 * The (Optional) tag in the sections for *all* repositories specifies steps of that section are *already done* for the student if using the provided Virtual Machine.
 
 
-## Install VirtualBox and Import Ubuntu VM Appliance (Optional)
+## 1. Install VirtualBox and Import Ubuntu VM Appliance (Optional)
 
 - If not, install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) as Administrator on [Windows 10](https://www.youtube.com/watch?v=8mns5yqMfZk) and [Mac OS X](https://www.youtube.com/watch?v=lEvM-No4eQo).
   - New Apple computers with M1 and M2 chips do not support VirtualBox yet.
@@ -21,7 +21,7 @@ This project jumps start the use of the ESP32 and programming environment. An ES
   - sudo password: toi
 - If a student feels the Ubuntu IoT VM is slow, please watch [How to improve Linux performance in a VirtualBox VM](https://www.youtube.com/watch?v=tbF8jNjD_IE).
 
-## Connect the IoT kit to the host OS
+## 2. Connect the IoT kit to the host OS
 
 The diagram below shows how the components of the ESP-32 SaTC-PCB module are connected to the ESP-32. **No actions are necessary**.   
 
@@ -31,7 +31,7 @@ You can see how the IoT kit is connected to a Laptop in the picture below.
 
 <img src="imgs/IoTKit.jpg" height=350> 
 
-## Install USB to UART Bridge Driver (Optional)
+## 3. Install USB to UART Bridge Driver (Optional)
 By default, you do not need to do anything within the host OS. 
 
 1. **Note**: Don’t start the Ubuntu VM yet.
@@ -76,7 +76,7 @@ By default, you do not need to do anything within the host OS.
 
 **Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/aht-lab ``` directory of the Ubuntu VM.
 
-## Build, Upload and Test
+## 4. Build, Upload and Test
 
 1. Start Visual Studio Code. Open the project by navigating to the tab *File* -> *Open Folder*. Navigate to ``` ~/esp/IoT-Examples/aht-lab ``` and click the **Open** button.
 
