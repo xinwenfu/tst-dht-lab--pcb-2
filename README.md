@@ -76,12 +76,7 @@ By default, you do not need to do anything within the host OS.
 
 ## Clone the project (Optional)
 
-**Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/ ``` directory of the Ubuntu VM.
-
-If you do not have the project, start the Ubuntu VM and clone this GitHub project within a folder. 
-```
-git clone https://github.com/xinwenfu/tst-dht-lab.git
-```
+**Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/aht-lab ``` directory of the Ubuntu VM.
 
 ## Build, Upload and Test
 
