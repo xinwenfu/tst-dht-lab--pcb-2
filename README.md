@@ -40,8 +40,10 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
 2.	Connect the ESP32 board to your computer via a micro USB cable.
 
 3.	Install the USB to UART bridge driver on the host computer, which will run the guest Ubuntu VM. 
-    - **Windows host**: It appears Windows installs the appropriate driver once the IoT kit is plugged. Within Windows' *Device Manager*, a serial port shall show up under *Ports (COM & LPT)* while it is not necessarily COM4. <br>
+    - **Windows host**: It appears Windows installs the appropriate driver once the IoT kit is plugged.
+      - Within Windows' *Device Manager*, a serial port shall show up under *Ports (COM & LPT)* while it is not necessarily COM4. <br>
     <img src="imgs/Windows-IoT-Kit-COM-Port.png" height=350>  <br>
+      - Within Ubuntu VM, the usb device is called ttyACM0 within /dev
     - **macOS host**:
       - Within /dev, the device is listed as something like /dev/tty.usbserial-550D0193571
       - The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopic.php?f=8&t=107333#p527198)!
@@ -52,7 +54,7 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
      
     - **Linux Host**: It appears Linux distributions like Ubuntu has the appropriate driver installed already. However, the following steps are needed for our Ubuntu VM to use the IoT kit:
       - Become a user with the sudo privileges. e.g., *su cyberadmin*.
-      - *sudo adduser student1 vboxusers* # student is the user that runs our Ubuntu IoT VM.
+      - *sudo adduser student vboxusers* # student is the user that runs our Ubuntu IoT VM.
       - Reboot the Linux host.
 
     - **Notes**: If black green shows up for the Ubuntu VM, try to increase Ubuntu VM -> Display -> Virtual Memory
