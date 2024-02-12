@@ -101,7 +101,7 @@ Windows and Linux users do not need to do anything by default (hope so). However
 
 <img src="imgs/ESP-IDF-VS-BFM.png" width=720>
 
-### Alternative Build, Upload and Monitor in a Terminal/Console (Optional)
+### (Optional) Alternative Build, Upload and Monitor in a Terminal/Console 
 **Alternatively**, Build, Upload and Monitor can be done in a terminal sessions as shown below.
 1. Open a *Terminal*.
 2. Run the shell script ```~/esp/esp-idf/export.sh```, or the provided *alias* in the ```~/.bashrc```
