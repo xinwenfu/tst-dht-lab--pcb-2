@@ -59,11 +59,11 @@ Windows and Linux users do not need to do anything by default (hope so). However
 
 
 ## 4. Start and log into the Ubuntu VM
-
+**Windows and Linux hosts**
 - Within the *Terminal*, run /ls/dev to see ttyACM0.
 - When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
 
-**macOS host**:
+**macOS host**
 - The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopic.php?f=8&t=107333#p527198)!
   1. Start VirtualBox using `sudo virtualbox` within a terminal 
   2. Within VirtualBox, push the + button to add the Ubuntu VM, which is located within your home folder as a .vdi file
