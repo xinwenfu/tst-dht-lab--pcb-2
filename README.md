@@ -33,8 +33,8 @@ You can see how the IoT kit is connected to a Laptop in the picture below.
 
 <img src="imgs/IoTKit.jpg" height=350> 
 
-## 3. (Optional) Install USB to UART Bridge Driver 
-By default, you do not need to do anything within the host OS. However, macOS users may have to folow the tutorial below.
+## 3. Install USB to UART Bridge Driver 
+Windows and Linux users do not need to do anything by default (hope so). However, macOS users may have to folow the tutorial below.
 
 1. **Note**: Don’t start the Ubuntu VM yet.
 
@@ -53,9 +53,12 @@ By default, you do not need to do anything within the host OS. However, macOS us
         3. Then just start your guest OS and USB devices should work
      
     - **Linux Host**: It appears Linux distributions like Ubuntu has the appropriate driver installed already. However, the following steps are needed for our Ubuntu VM to use the IoT kit:
+  
+<!---
       - Become a user with the sudo privileges. e.g., *su cyberadmin*.
       - *sudo adduser student vboxusers* # student is the user that runs our Ubuntu IoT VM.
       - Reboot the Linux host.
+--->
 
     - **Notes**: If black green shows up for the Ubuntu VM, within VirtualBox, try to increase Ubuntu VM -> Display -> Virtual Memory
 
