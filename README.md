@@ -41,7 +41,7 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
 
 3.	Install the USB to UART bridge driver on the host computer, which will run the guest Ubuntu VM. 
     - **Windows host**: It appears Windows installs the appropriate driver once the IoT kit is plugged.
-      - Within Windows' *Device Manager*, a serial port shall show up under *Ports (COM & LPT)* while it is not necessarily COM4. <br>
+      - Within Windows' *Device Manager*, a serial port shall show up under *Ports (COM & LPT)* while it is not necessarily COM4. Once the Ubuntu VM starts, the device disappears since the Ubuntu VM takes the control of the device. <br>
     <img src="imgs/Windows-IoT-Kit-COM-Port.png" height=350>  <br>
       - Within Ubuntu VM, the usb device is called ttyACM0 within /dev
     - **macOS host**:
