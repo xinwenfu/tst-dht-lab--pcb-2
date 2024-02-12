@@ -74,7 +74,7 @@ By default, you do not need to do anything within the host OS. However, macOS us
   - Try different USB ports on the computer and see which one works. 
   - Sometimes, unplugging the micro usb cable and plugging it back in will address the issue.
 
-## 5. Clone the project (Optional)
+## 5. (Optional) Clone the project
 
 **Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/aht-lab ``` directory of the Ubuntu VM.
 
