@@ -9,7 +9,7 @@ This project jumps start the use of the ESP32 and programming environment. An ES
 * The (Optional) tag in the sections for *all* repositories specifies steps of that section are *already done* for the student if using the provided Virtual Machine.
 
 
-## 1. Install VirtualBox and Import Ubuntu VM Appliance (Optional)
+## 1. (Optional) Install VirtualBox and Import Ubuntu VM Appliance 
 
 - If not, install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads) as Administrator on [Windows 10](https://www.youtube.com/watch?v=8mns5yqMfZk) and [Mac OS X](https://www.youtube.com/watch?v=lEvM-No4eQo).
   - New Apple computers with M1 and M2 chips do not support VirtualBox yet.
@@ -33,8 +33,8 @@ You can see how the IoT kit is connected to a Laptop in the picture below.
 
 <img src="imgs/IoTKit.jpg" height=350> 
 
-## 3. Install USB to UART Bridge Driver (Optional)
-By default, you do not need to do anything within the host OS. 
+## 3. (Optional) Install USB to UART Bridge Driver 
+By default, you do not need to do anything within the host OS. However, macOS users may have to folow the tutorial below.
 
 1. **Note**: Don’t start the Ubuntu VM yet.
 
