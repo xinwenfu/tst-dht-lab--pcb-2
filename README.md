@@ -57,7 +57,7 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
       - *sudo adduser student vboxusers* # student is the user that runs our Ubuntu IoT VM.
       - Reboot the Linux host.
 
-    - **Notes**: If black green shows up for the Ubuntu VM, try to increase Ubuntu VM -> Display -> Virtual Memory
+    - **Notes**: If black green shows up for the Ubuntu VM, within VirtualBox, try to increase Ubuntu VM -> Display -> Virtual Memory
 
 5. Start and log into the Ubuntu VM, within the *Terminal*, run /ls/dev to see ttyACM0 (Note it may appear as ttyUSB0).
   - When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
