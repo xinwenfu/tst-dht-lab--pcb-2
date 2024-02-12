@@ -57,7 +57,8 @@ Windows and Linux users do not need to do anything by default (hope so). However
 <!---
       - Become a user with the sudo privileges. e.g., *su cyberadmin*.
       - *sudo adduser student vboxusers* # student is the user that runs our Ubuntu IoT VM.
-      - Reboot the Linux host. --->
+      - Reboot the Linux host. 
+-->
 
     - **Notes**: If black green shows up for the Ubuntu VM, within VirtualBox, try to increase Ubuntu VM -> Display -> Virtual Memory
 
