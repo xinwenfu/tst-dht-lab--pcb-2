@@ -80,15 +80,19 @@ By default, you do not need to do anything within the host OS.
 
 ## Build, Upload and Test
 
-1. Start Visual Studio Code. Open the project by navigating to the tab *File* -> *Open Folder*. 
+1. Start Visual Studio Code. Open the project by navigating to the tab *File* -> *Open Folder*. Navigate to ``` ~/esp/IoT-Examples/aht-lab ``` and click the **Open** button.
+
+![image](https://github.com/xinwenfu/tst-dht-lab--pcb-2/assets/69218457/58e04c63-cac1-4dea-a82b-f18ace67d307)
+
+
 2. Click the *ESP-IDF: Build* icon on the status bar at the bottom of the VS Code interface to build the project. 
    - Refer to the picture below.
    - If the icon does not work, use the alternative approach provided at the end of this post.
-4. Click the *ESP-IDF: Flash* to upload the firmware onto the ESP32 board. 
+3. Click the *ESP-IDF: Flash* to upload the firmware onto the ESP32 board. 
    - **Note**: During the uploading process, you may need to hold down the boot button until the uploading starts.
    - Refer to the picture below.
    - If the icon does not work, use the alternative approach provided at the end of this post.
-5. Click the *ESP-IDF: Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
+4. Click the *ESP-IDF: Monitor* icon to open the Serial Monitor to see the output from the ESP32 board. 
    - Refer to the picture below.
    - If the icon does not work, use the alternative approach provided at the end of this post.
 
