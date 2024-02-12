@@ -22,7 +22,7 @@ This project jumps start the use of the ESP32 and programming environment. An ES
   - sudo password: toi
 - If a student feels the Ubuntu IoT VM is slow, please watch [How to improve Linux performance in a VirtualBox VM](https://www.youtube.com/watch?v=tbF8jNjD_IE).
 
-## The IoT kit
+## Connect the IoT kit to the host OS
 
 The diagram below shows how the components of the ESP-32 SaTC-PCB module are connected to the ESP-32. **No actions are necessary**.   
 
@@ -32,8 +32,9 @@ You can see how the IoT kit is connected to a Laptop in the picture below.
 
 <img src="imgs/IoTKit.jpg" height=350> 
 
-## Install USB to UART Bridge Driver 
-The hardest part is to make USB to UART Bridge driver of the IoT kit work so that we can communciate with the ESP32 chip on the IoT kit.
+## Install USB to UART Bridge Driver (Optional)
+By default, you do not need to do anything within the host OS. 
+<-- However, The hardest part is to make USB to UART Bridge driver of the IoT kit work so that we can communciate with the ESP32 chip on the IoT kit. -->
 
 1. **Note**: Don’t start the Ubuntu VM yet.
 
@@ -58,12 +59,14 @@ The hardest part is to make USB to UART Bridge driver of the IoT kit work so tha
 
     - **Notes**: If black green shows up for the Ubuntu VM, within VirtualBox, try to increase Ubuntu VM -> Display -> Virtual Memory
 
-4. Start and log into the Ubuntu VM, within the *Terminal*, run /ls/dev to see ttyACM0.
-   - When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
+## Start and log into the Ubuntu VM
+- Within the *Terminal*, run /ls/dev to see ttyACM0.
+- When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
 
-**Note**: The VM is already configured to use the IoT kit through its *USB Device Filters* (This VM -> Settings -> USB) as shown below. Once the VM starts, the COMX port on Windows disappears. When the VM is shut down, the COMX port on Windows shows up again.
+**Note**: The VM is already configured to use the IoT kit through its *USB Device Filters* (This VM -> Settings -> USB) within VirtualBox.
+<!-- as shown below. Once the VM starts, the COMX port on Windows disappears. When the VM is shut down, the COMX port on Windows shows up again. -->
 
-<img src="imgs/VM-USB-Device-Filters.png" height=350> 
+<!-- <img src="imgs/VM-USB-Device-Filters.png" height=350> -->
 
   
 **Note**: If there are issues, the following are some troubleshooting tips.
