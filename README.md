@@ -98,7 +98,7 @@ Windows and Linux users do not need to do anything by default (hope so). However
    - Refer to the picture below.
    - If the icon does not work, use the alternative approach provided at the end of this post.
 
-<img src="imgs/ESP-IDF-VS-BFM.png" width=512>
+<img src="imgs/ESP-IDF-VS-BFM.png" width=720>
 
 ### Alternative Build, Upload and Monitor in a Terminal/Console (Optional)
 **Alternatively**, Build, Upload and Monitor can be done in a terminal sessions as shown below.
@@ -131,6 +131,6 @@ $ set-esp
     ```
 > Note that the commands can be combined and run sequentially as shown in the provided image
 
-<img src="imgs/ESP-IDF-PY-BFM.png" height=720>
+<img src="imgs/ESP-IDF-PY-BFM.png" height=350>
 
 
