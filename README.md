@@ -74,11 +74,11 @@ By default, you do not need to do anything within the host OS. However, macOS us
   - Try different USB ports on the computer and see which one works. 
   - Sometimes, unplugging the micro usb cable and plugging it back in will address the issue.
 
-## Clone the project (Optional)
+## 5. Clone the project (Optional)
 
 **Note**: By default, this project is already located in the ``` ~/esp/IoT-Examples/aht-lab ``` directory of the Ubuntu VM.
 
-## 5. Build, Upload and Test
+## 6. Build, Upload and Test
 
 1. Start Visual Studio Code. Open the project by navigating to the tab *File* -> *Open Folder*. Navigate to ``` ~/esp/IoT-Examples/aht-lab ``` and click the **Open** button.
 
