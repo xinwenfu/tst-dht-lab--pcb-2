@@ -1,4 +1,4 @@
-**[< Back](https://github.com/xinwenfu/IoT)**
+**< [Back](https://github.com/xinwenfu/IoT)**
 
 # Get started with ESP32 via VS Code and the ESP-IDF extension 
 
