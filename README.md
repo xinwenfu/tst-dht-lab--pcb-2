@@ -69,16 +69,15 @@ The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopi
 **Note**: 
 - The VM is already configured to use the IoT kit through its *USB Device Filters* (This VM -> Settings -> USB) within VirtualBox.
 - When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
+- If there are issues, the following are some troubleshooting tips.
+  - Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
+  - Try different USB ports on the computer and see which one works. 
+  - Sometimes, unplugging the micro usb cable and plugging it back in will address the issue.
 
 <!-- as shown below. Once the VM starts, the COMX port on Windows disappears. When the VM is shut down, the COMX port on Windows shows up again. -->
 
 <!-- <img src="imgs/VM-USB-Device-Filters.png" height=350> -->
 
-  
-- If there are issues, the following are some troubleshooting tips.
-  - Make sure the correct micro usb cable is used. The micro usb is like the one used for phones for both data communication and power supply.
-  - Try different USB ports on the computer and see which one works. 
-  - Sometimes, unplugging the micro usb cable and plugging it back in will address the issue.
 
 ## 5. (Optional) Clone the project
 
