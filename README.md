@@ -115,7 +115,9 @@ The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopi
 # This is the manual method
 # Take note of the period in front of the script, this means we are running it as a source.
 $ . ~/esp/esp-idf/export.sh
-
+```
+Or
+```sh
 # This is one of the aliases provided, it does the same as the command above.
 $ set-esp
 ```
