@@ -137,6 +137,6 @@ $ set-esp
     ```
 > Note that the commands can be combined and run sequentially as shown in the provided image
 
-<img src="imgs/ESP-IDF-PY-BFM.png" height=350>
+<img src="imgs/ESP-IDF-PY-BFM.PNG" height=350>
 
 
