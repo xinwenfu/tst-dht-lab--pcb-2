@@ -27,11 +27,11 @@ This project jumps start the use of the ESP32 and programming environment. An ES
 
 The diagram below shows how the components of the ESP-32 SaTC-PCB module are connected to the ESP-32. **No actions are necessary**.   
 
-<img src="imgs/IoT-Kit-Diagram.jpg" height=350>
+<img src="imgs/IoT-Kit-Diagram.jpg" width=480>
 
 You can see how the IoT kit is connected to a Laptop in the picture below. 
 
-<img src="imgs/PCB2.jpg" height=350> 
+<img src="imgs/PCB2.jpg" width=480> 
 
 ## 3. Install USB to UART Bridge Driver 
 Windows and Linux users do not need to do anything by default (hope so). However, macOS users may have to folow the tutorial below.
