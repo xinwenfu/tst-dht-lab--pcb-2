@@ -58,7 +58,6 @@ Windows and Linux users do not need to do anything by default (hope so). However
 **Windows and Linux hosts**
 - Start the Ubuntu VM within VirtualBox and log into it
 - Within the *Terminal*, run *ls /dev* within a terminal to see ttyACM0.
-- When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
 
 **macOS host**
 
@@ -67,7 +66,10 @@ The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopi
 2. Within VirtualBox, push the + button to add the Ubuntu VM, which is located within your home folder as a .vdi file
 3. Then just start your the Ubuntu VM and USB devices should work
 
-**Note**: The VM is already configured to use the IoT kit through its *USB Device Filters* (This VM -> Settings -> USB) within VirtualBox.
+**Note**: 
+- The VM is already configured to use the IoT kit through its *USB Device Filters* (This VM -> Settings -> USB) within VirtualBox.
+- When the micro-usb cable of the IoT kit is unplugged from your host computer, ttyACM0 disappears. 
+
 <!-- as shown below. Once the VM starts, the COMX port on Windows disappears. When the VM is shut down, the COMX port on Windows shows up again. -->
 
 <!-- <img src="imgs/VM-USB-Device-Filters.png" height=350> -->
