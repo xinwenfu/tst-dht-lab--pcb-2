@@ -37,9 +37,6 @@ You can see how the IoT kit is connected to a Laptop in the picture below.
 Windows and Linux users do not need to do anything by default (hope so). However, macOS users may have to folow the tutorial below.
 
 1. **Note**: Don’t start the Ubuntu VM yet.
-
-2.	Connect the ESP32 board to your computer via a micro USB cable.
-
 3.	Install the USB to UART bridge driver on the host computer, which will run the guest Ubuntu VM. 
     - **Windows host**: It appears Windows installs the appropriate driver once the IoT kit is plugged.
       - Within Windows' *Device Manager*, a serial port shall show up under *Ports (COM & LPT)* while it is not necessarily COM4. Once the Ubuntu VM starts, the device disappears since the Ubuntu VM takes the control of the device. <br>
