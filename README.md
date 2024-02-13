@@ -109,14 +109,14 @@ The Ubuntu VM has to be started as [root](https://forums.virtualbox.org/viewtopi
 ### (Optional) Alternative Build, Upload and Monitor in a Terminal/Console 
 **Alternatively**, Build, Upload and Monitor can be done in a terminal sessions as shown below.
 1. Open a *Terminal*.
-2. Run the shell script ```~/esp/esp-idf/export.sh```, or the provided *alias* in the ```~/.bashrc```
+2. Run the shell script ```~/esp/esp-idf/export.sh```
     - This script is run as a source, not directly executed.
 ```sh
 # This is the manual method
 # Take note of the period in front of the script, this means we are running it as a source.
 $ . ~/esp/esp-idf/export.sh
 ```
-Or
+Or the provided *alias* in the ```~/.bashrc```
 ```sh
 # This is one of the aliases provided, it does the same as the command above.
 $ set-esp
